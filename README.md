@@ -9,6 +9,8 @@ version: 1.0.0
 1. BOOTSTRAP 5
 1. HTML
 1. CSS
+1. AJAX
+
 
 ## Authors
 [Ayush Kumar Singh](https://github.com/ayush-singh-07)
