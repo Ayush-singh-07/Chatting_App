@@ -1,0 +1,42 @@
+.fileselect{
+    margin-left: 56px;
+}
+
+.errormsg{
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: none;               /* hided eror msg */
+
+}
+
+
+.form form .field i.active::before{
+    color: #333;
+    content: "\f070";
+  }
+
+
+  /* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+

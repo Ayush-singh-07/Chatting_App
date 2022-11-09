@@ -1,0 +1,13 @@
+.fileselect{
+    margin-left: 56px;
+}
+
+.errormsg{
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: none;
+}
