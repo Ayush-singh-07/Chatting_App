@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2022 at 09:26 AM
+-- Generation Time: Nov 09, 2022 at 11:22 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -28,6 +28,9 @@ USE `chatapp`;
 --
 -- Table structure for table `chats`
 --
+-- Creation: Oct 30, 2022 at 05:43 PM
+-- Last update: Nov 09, 2022 at 10:07 AM
+--
 
 DROP TABLE IF EXISTS `chats`;
 CREATE TABLE IF NOT EXISTS `chats` (
@@ -37,8 +40,13 @@ CREATE TABLE IF NOT EXISTS `chats` (
   `message` varchar(2000) NOT NULL,
   `datetimestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`msg_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
 
+--
+-- Truncate table before insert `chats`
+--
+
+TRUNCATE TABLE `chats`;
 --
 -- Dumping data for table `chats`
 --
@@ -58,12 +66,25 @@ INSERT INTO `chats` (`msg_id`, `outgoing_msg_id`, `incoming_msg_id`, `message`, 
 (12, 1142400451, 1383646038, 'sdssdsds', '2022-11-09 08:24:24'),
 (13, 1142400451, 1383646038, 'ayushssssssssssssss', '2022-11-09 08:24:39'),
 (14, 1142400451, 1383646038, 'asdasda', '2022-11-09 08:24:42'),
-(15, 1142400451, 1383646038, 'sdfsd', '2022-11-09 08:24:59');
+(15, 1142400451, 1383646038, 'sdfsd', '2022-11-09 08:24:59'),
+(16, 1142400451, 1349105658, 'hello', '2022-11-09 10:07:10'),
+(17, 1349105658, 1142400451, 'hi', '2022-11-09 10:07:13'),
+(18, 1142400451, 1349105658, 'hwy', '2022-11-09 10:07:17'),
+(19, 1349105658, 1142400451, 'dxgfxd', '2022-11-09 10:07:20'),
+(20, 1142400451, 1349105658, 'sadasd', '2022-11-09 10:07:27'),
+(21, 1349105658, 1142400451, 'sdfsdf', '2022-11-09 10:07:29'),
+(22, 1142400451, 1349105658, 'asdasd', '2022-11-09 10:07:31'),
+(23, 1142400451, 1349105658, 'asda', '2022-11-09 10:07:33'),
+(24, 1142400451, 1349105658, 'asd', '2022-11-09 10:07:35'),
+(25, 1349105658, 1142400451, 'asdasd', '2022-11-09 10:07:38');
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `users`
+--
+-- Creation: Oct 26, 2022 at 10:43 AM
+-- Last update: Nov 09, 2022 at 10:06 AM
 --
 
 DROP TABLE IF EXISTS `users`;
@@ -81,13 +102,18 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 --
+-- Truncate table before insert `users`
+--
+
+TRUNCATE TABLE `users`;
+--
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `unique_id`, `f_name`, `l_name`, `email`, `password`, `picture`, `datetime`, `status`) VALUES
-(1, 1142400451, 'Ayush', 'Singh', 'ayush@gmail.com', '123456', '1667967415pic.jpeg', '2022-11-09 04:20:07', 'Active Now'),
+(1, 1142400451, 'Ayush', 'Singh', 'ayush@gmail.com', '123456', '1667967415pic.jpeg', '2022-11-09 10:06:22', 'Active Now'),
 (2, 1383646038, 'Sahil ', 'Khurseed', 'sahil@gmail.com', '123456', '1667967480Chat2.jpg', '2022-11-09 08:25:24', 'Offline now'),
-(3, 1349105658, 'Amit', 'Sharma', 'amit@gmail.com', '123456', '1667967585467086.jpg', '2022-11-09 04:32:12', 'Offline now');
+(3, 1349105658, 'Amit', 'Sharma', 'amit@gmail.com', '123456', '1667967585467086.jpg', '2022-11-09 10:06:53', 'Active Now');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
