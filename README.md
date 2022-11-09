@@ -10,6 +10,7 @@ version: 1.0.0
 1. HTML
 1. CSS
 1. AJAX
+1. Javascript
 
 
 ## Authors
