@@ -13,9 +13,3 @@ version: 1.0.0
 1. Javascript
 
 
-## Authors
-[Ayush Kumar Singh](https://github.com/ayush-singh-07)
-
-[Sahil Khursheed](https://github.com/sahilkhursheed)
-
-[Amit Shamra](https://github.com/)
